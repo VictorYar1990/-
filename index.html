@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Lab</title>
+    <link rel = "stylesheet" href = "index.css"/>
+    </head>
+    <body>
+        <header>
+            <h1>Добро пожаловать в мир JavaScript!</h1>
+        </header>
+        <main>
+            <pointer-particles></pointer-particles>
+            <section id="intro">
+                <h2>Что такое JavaScript?</h2>
+                <p>JavaScript - это язык программирования, который делает веб-страницы интерактивными. С его помощью можно добавлять анимацию, обработку событий, взаимодействие с пользователем и многое другое.</p>
+                <h2>Зачем изучать JavaScript?</h2>
+                <p>JavaScript - это один из самых востребованных языков программирования. Он используется для создания веб-приложений, мобильных приложений, игр и многого другого. 
+                </p>
+                <h2>Где пригодится JavaScript?</h2>
+                <ul>
+                    <li>Создание интерактивных элементов на веб-страницах</li>
+                    <li>Разработка веб-приложений (например, онлайн-магазинов, социальных сетей)</li>
+                    <li>Создание мобильных приложений</li>
+                    <li>Разработка игр</li>
+                    <li>Использование в серверных технологиях (Node.js)</li>
+                </ul>
+                <h2>Когда JavaScript не пригодится?</h2>
+                <p>JavaScript не используется для создания статических веб-страниц. Для этого лучше использовать языки разметки, такие как HTML и CSS.</p>
+            </section>
+        </main>
+        <div id="lab1">
+            <div style="font-weight: bold"><h1>Практическая работа № 1 (Типы данных. Приведение типов в JS. Циклы)</h1></div>
+            <button onclick="task1()">Укажите знак зодиака </button>
+            <button onclick="task2()">числа от 1 до 40 </button>
+            <!--<button onclick="task3()">Вирусная страничка </button>-->
+            <button onclick="task4()">число больше 5 </button>
+            <button onclick="task5()">числа от 8 до 20</button>
+            <button onclick="task6()">нечетные числа от 1 до 7, пропустив 5 </button>
+            
+
+        </div>
+        <div id="lab1">
+            <div style="font-weight: bold"><h1>Практическая работа № 2 (Массивы. Функции)</h1></div>
+            <button onclick="task21()">Задание1 </button>
+            <button onclick="task22()">Задание2 </button>
+            <button onclick="task23()">Задание3 </button>
+            <button onclick="task24()">Задание4 </button>
+            <button onclick="task25()">Задание5</button>
+            <button onclick="task26()">Задание6</button>
+            <button onclick="task27()">Задание7 </button>
+            <button onclick="task28()">Задание8 </button>
+            <button onclick="task29()">Задание9 </button>
+            <button onclick="task210()">Задание10 </button>
+            
+
+        </div>
+
+        <div id="task21">
+            <div style="font-weight: bold">Демонстрация №1</div>
+            <div>
+                function task21(){<br/>
+                &nbsp;&nbsp;    let arr1=[];<br/>
+                &nbsp;&nbsp;    let arr2= new Array();<br/>
+                &nbsp;&nbsp;    let arr3 = Array.from("Hello");<br/>}
+            </div>
+            <div>
+                <button onclick=executeDemo1()>Выполнить</button>
+            </div>
+        </div>
+        <div id="tests"> </div>
+        <button onclick="checkTest()">Проверить</button>
+        <div id = "result"> </div>
+        <div>Тема </div>
+        <div>
+            <input type = "radio" 
+            name = "theme" 
+            id = "light"
+             value = "light" 
+             onclick = " toggleTheme(this)"/>
+            <label for  = "light">Светлая</label>
+        </div>
+        <div>
+            <input type = "radio" 
+            name = "theme" 
+            id = "dark" 
+            value = "dark" 
+            onclick = " toggleTheme(this)"/>
+            <label for  = "dark">Темная</label>
+        </div>
+    <script src="index2.js"></script>
+    <script src="index3.js"></script>
+    </body>
+    
+    
+</html>
